@@ -4,3 +4,10 @@ class Robot:
         self.name = name
         self.health = 100
         self.active_weapon = Weapon('grenade launcher', 50)
+
+    def attack(self, Dinosaur):
+        pass
+
+
+   
+        
