@@ -16,13 +16,12 @@ class Battlefield:
          
     def battle_phase(self):
         # robot attacks, print results
-        while self.robot.health != 0 or self.dinosaur.health != 0:
+        while self.robot.health > 0 and self.dinosaur.health > 0:
             self.robot.attack(self.dinosaur)
             self.dinosaur.attack(self.robot)
-        # dino attacks, print results
-        # continue attacks until one combatant is eliminated
-        
-        # Endgame Section
-        # Display winner
+    
     def display_winner(self):
-        pass
+        if self.robot.health == 0:
+            print(f'{self.dinosaur.name} is the WINNER!')
+        else:
+            print(f'{self.robot} is the WINNER!')    
