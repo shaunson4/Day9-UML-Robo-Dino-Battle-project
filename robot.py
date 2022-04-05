@@ -4,9 +4,9 @@ class Robot:
     def __init__(self, name):
         self.name = name
         self.health = 100
-        self.active_weapon = Weapon('machine gun', 15)
+        self.active_weapon = Weapon('blow torch', 55)
         self.weapon_one = Weapon('grenade launcher', 25)
-        self.weapon_two = Weapon('blow torch', 50)
+        self.weapon_two = Weapon('blow torch', 55)
         self.weapon_three = Weapon('machine gun', 15)
 
     def attack(self, Dinosaur):
