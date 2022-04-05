@@ -1,15 +1,13 @@
 from weapon import Weapon
 
-weapon_one = Weapon('grenade launcher', 25)
-weapon_two = Weapon('blow torch', 50)
-weapon_three = Weapon('machine gun', 15)
-
-
 class Robot:
     def __init__(self, name):
         self.name = name
         self.health = 100
-        self.active_weapon = Weapon('grenade launcher', 25)
+        self.active_weapon = Weapon('machine gun', 15)
+        self.weapon_one = Weapon('grenade launcher', 25)
+        self.weapon_two = Weapon('blow torch', 50)
+        self.weapon_three = Weapon('machine gun', 15)
 
     def attack(self, Dinosaur):
         # lower dino's health by attack power of weapon
