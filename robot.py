@@ -1,4 +1,10 @@
 from weapon import Weapon
+
+weapon_one = Weapon('grenade launcher', 25)
+weapon_two = Weapon('blow torch', 50)
+weapon_three = Weapon('machine gun', 15)
+
+
 class Robot:
     def __init__(self, name):
         self.name = name
